@@ -17,11 +17,6 @@ public class Teatro extends Sessao {
     @Override
     public String toString() {
         return "Teatro{" +
-                "\nnome:" + getNome() + '\'' +
-                "\n sala:" + getSala() +
-                "\n hora:" + getHora()+ '\'' +
-                "\n data='" + getData() + '\'' +
-                "\n codigo='" + getCodigo() + '\'' +
                 "valorIngresso=" + valorIngresso +
                 '}';
     }

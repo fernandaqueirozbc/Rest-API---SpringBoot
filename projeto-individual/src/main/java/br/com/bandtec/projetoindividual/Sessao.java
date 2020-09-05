@@ -20,12 +20,13 @@ public abstract class Sessao {
 
     @Override
     public String toString() {
-        return "Sessao:" +
-                "\nnome:" + nome + '\'' +
-                "\n sala:" + sala +
-                "\n hora:" + hora + '\'' +
-                "\n data:" + data + '\'' +
-                "\n codigo='" + codigo + '\'';
+        return "Sessao{" +
+                "nome='" + nome + '\'' +
+                ", sala=" + sala +
+                ", hora='" + hora + '\'' +
+                ", data='" + data + '\'' +
+                ", codigo=" + codigo +
+                '}';
     }
 
     public String getNome() {
@@ -46,25 +47,5 @@ public abstract class Sessao {
 
     public Integer getCodigo() {
         return codigo;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setSala(Integer sala) {
-        this.sala = sala;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
-
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
     }
 }

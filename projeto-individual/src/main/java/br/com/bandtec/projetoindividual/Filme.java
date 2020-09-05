@@ -16,14 +16,9 @@ public class Filme extends Sessao {
 
     @Override
     public String toString() {
-        return "Filme:" +
-                "\nnome:" + getNome() + '\'' +
-                "\n sala:" + getSala() +
-                "\n hora:" + getHora()+ '\'' +
-                "\n data='" + getData() + '\'' +
-                "\n codigo='" + getCodigo() + '\'' +
-                "\nvalorIngresso:" + valorIngresso
-                ;
+        return "Filme{" +
+                "valorIngresso=" + valorIngresso +
+                '}';
     }
 
     public Double getValorIngresso() {
