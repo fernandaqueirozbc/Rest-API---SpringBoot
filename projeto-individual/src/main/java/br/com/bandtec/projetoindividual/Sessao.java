@@ -6,14 +6,12 @@ public abstract class Sessao {
     private Integer sala;
     private String hora;
     private String data;
-    private Integer codigo;
 
-    public Sessao(String nome, Integer sala, String hora, String data, Integer codigo) {
+    public Sessao(String nome, Integer sala, String hora, String data) {
         this.nome = nome;
         this.sala = sala;
         this.hora = hora;
         this.data = data;
-        this.codigo = codigo;
     }
 
     public abstract Double calcValorIngresso();
@@ -25,7 +23,6 @@ public abstract class Sessao {
                 ", sala=" + sala +
                 ", hora='" + hora + '\'' +
                 ", data='" + data + '\'' +
-                ", codigo=" + codigo +
                 '}';
     }
 
@@ -43,9 +40,5 @@ public abstract class Sessao {
 
     public String getData() {
         return data;
-    }
-
-    public Integer getCodigo() {
-        return codigo;
     }
 }

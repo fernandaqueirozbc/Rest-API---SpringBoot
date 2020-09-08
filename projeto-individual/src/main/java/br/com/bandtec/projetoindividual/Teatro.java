@@ -4,8 +4,8 @@ public class Teatro extends Sessao {
 
     private Double valorIngresso;
 
-    public Teatro(String nome, Integer sala, String hora, String data, Integer codigo, Double valorIngresso) {
-        super(nome, sala, hora, data, codigo);
+    public Teatro(String nome, Integer sala, String hora, String data, Double valorIngresso) {
+        super(nome, sala, hora, data);
         this.valorIngresso = valorIngresso;
     }
 
